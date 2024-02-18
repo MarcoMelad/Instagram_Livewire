@@ -21,7 +21,7 @@
     </div>
 
     {{-- Side content --}}
-    <ul class="space-y-4 mt-2">
+    <ul class="space-y-4 mt-2 ">
 
         <li><a wire:navigate href="/" class="flex items-center gap-5 ">
 
