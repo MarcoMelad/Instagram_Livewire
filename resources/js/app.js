@@ -7,4 +7,7 @@ livewire_hot_reload();
 
 window.Alpine = Alpine;
 
+import intersect from '@alpinejs/intersect'
+Alpine.plugin(intersect)
+
 Alpine.start();
