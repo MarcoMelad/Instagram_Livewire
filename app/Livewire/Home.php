@@ -59,11 +59,12 @@ class Home extends Component
 
     function loadPosts()  {
 
-        $this->posts = Post::with('comments.replies')
-            ->latest()
-            ->take($this->perPage)->get();
-
-        $this->canLoadMore= (count($this->posts)>= $this->perPage);
+//        $this->posts = Post::with('comments.replies')
+//            ->latest()
+//            ->take($this->perPage)->get();
+//
+//        $this->canLoadMore= (count($this->posts)>= $this->perPage);
+        $this->posts = Post::latest()->get();
 
     }
 
